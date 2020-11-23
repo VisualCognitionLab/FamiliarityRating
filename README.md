@@ -2,10 +2,11 @@
 This is a simple project that uses jsPsych to create an experiment that collects familiarity ratings for a set of images.
 
 The main experiment is housed in the "index.html" file. This file defines and runs the experiment. 
-This experiment needs the necessary libraries (jsPsych-6.1.0/), the necessary jQuery file ("jquery-3.5.1.js" -- used for certain functionality), the "write_data.php" file (saves the data), as well as all of the images used in the experiment (housed in the ganfaces_final/ folder-- except the consent form saved in main directory for easy swapping-out). 
+This experiment needs the necessary libraries (jsPsych-6.1.0/), the necessary jQuery file ("jquery-3.5.1.js" -- used for certain functionality), the "write_data.php" file (saves the data), as well as all of the images used in the experiment (housed in the ganfaces_final/ folder-- ask Ivette for access to this image folder). 
 
 This is easily editable for your own use-- swap out stimuli files, edit survey questions, etc.-- however, I recommend builiding an experiment from scratch using jsPsych if you can!
 It's remarkably simple and customizable, although it may take a bit of Googling and a couple of hours to get the hang of it! It's worth it, though. This very experiment started from a simple tutorial: https://www.jspsych.org/tutorials/hello-world/
+You can download the necessary jsPsych libraries (6.1.0) for this experiment from their website.
 
 
 ### To run this experiment on a server (like Sapir)
