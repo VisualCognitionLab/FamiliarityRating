@@ -5,7 +5,7 @@ The main experiment is housed in the "index.html" file. This file defines and ru
 This experiment needs the necessary libraries (jsPsych-6.1.0/), the necessary jQuery file ("jquery-3.5.1.js" -- used for certain functionality), the "write_data.php" file (saves the data), as well as all of the images used in the experiment (housed in the ganfaces_final/ folder-- ask Ivette for access to this image folder). 
 
 This is easily editable for your own use-- swap out stimuli files, edit survey questions, etc.-- however, I recommend building an experiment from scratch using jsPsych if you can!
-It's remarkably simple and customizable, although it may take a bit of Googling and a couple of hours to get the hang of it. It's worth it, though. This very experiment started from a simple tutorial: https://www.jspsych.org/tutorials/hello-world/
+It's remarkably simple and customizable, although it may take a bit of Googling and a couple of hours to get the hang of it. It's worth it, though. This very experiment started from a simple tutorial: https://www.jspsych.org/tutorials/hello-world/.
 You can download the necessary jsPsych libraries (6.1.0) for this experiment from their website.
 
 
