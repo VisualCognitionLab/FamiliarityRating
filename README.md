@@ -1,5 +1,5 @@
 # Familiarity Rating Experiment
-This is a simple project that uses jsPsych to create an experiment for rating a set of images on a "familiarity" scale.
+This is a simple project that uses jsPsych to create an experiment that collects familiarity ratings for a set of images.
 
 The main experiment is housed in the "index.html" file. This file defines and runs the experiment. 
 This experiment needs the necessary libraries (jsPsych-6.1.0/), the necessary jQuery file ("jquery-3.5.1.js" -- used for certain functionality), the "write_data.php" file (saves the data), as well as all of the images used in the experiment (housed in the ganfaces_final/ folder-- except the consent form saved in main directory for easy swapping-out). 
