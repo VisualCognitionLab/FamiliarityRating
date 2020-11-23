@@ -8,7 +8,7 @@ This experiment needs:
 * the "write_data.php" file (saves the data)
 * the images used in the experiment (housed in folder called "ganfaces_final/" -- ask Ivette for access to this image folder) 
 
-This is easily editable for your own use-- swap out stimuli files, edit survey questions, etc.-- However, I recommend building an experiment from scratch using jsPsych if you can.
+The "index.html" file is easily editable for your own use-- swap out stimuli files, edit survey questions, etc.-- However, I recommend building an experiment from scratch using jsPsych if you can.
 It's remarkably simple and customizable, although it may take a bit of Googling and a couple of hours to get the hang of it. It's worth it, though! This very experiment started from a simple tutorial: https://www.jspsych.org/tutorials/hello-world/.
 You can download the necessary jsPsych libraries (6.1.0) for this experiment from their website.
 
