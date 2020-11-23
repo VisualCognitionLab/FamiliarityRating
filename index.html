@@ -148,7 +148,10 @@
                         {face: "ganfaces_final/face_28_resized.jpg"},
                         {face: "ganfaces_final/face_0_resized.jpg"},
                         {face: "ganfaces_final/face_41_resized.jpg"},
-                        {face: "ganfaces_final/face_157_resized.jpg"}];
+                        {face: "ganfaces_final/face_157_resized.jpg"},
+                        {face: "ganfaces_final/mickey_tyler.jpg"},
+                        {face: "ganfaces_final/mickey_taylor.jpg"},
+                        {face: "ganfaces_final/mickey_clayton.jpg"}];
 
 
 
@@ -196,15 +199,23 @@
       "Often",
       "Always"
     ];
+      
+    var scale_2 = [
+        "Strongly Agree",
+        "Agree",
+        "Not Applicable",
+        "Disagree",
+        "Strongly Disagree"
+    ];
 
     var likert_page = {
       type: 'survey-likert',
       questions: [
-        {prompt: "Faces in this experiment looked like people I know personally.", name: 'personally', labels: scale_1},
-        {prompt: "Faces in this experiment looked like celebrities I know.", name: 'celebrity', labels: scale_1},
-        {prompt: "My familiarity ratings were based on the whole face.", name: 'whole_face', labels: scale_1},
-        {prompt: "My familiarity ratings were based on specific face features.", name: 'specific_feats', labels: scale_1},
-        {prompt: "Faces in the experiment looked similar to one another.", name: 'set_similar', labels: scale_1}
+        {prompt: "I used specific face features when rating familiarity.", name: 'specific_feats', labels: scale_1},
+        {prompt: "I used the whole face when rating familiarity.", name: 'whole_face', labels: scale_1},
+        {prompt: "I was likely to rate a face as more familiar when they looked like someone I know personally.", name: 'personally', labels: scale_2},
+        {prompt: "I was likely to rate faces as familiar when they looked like someone famous.", name: 'celebrity', labels: scale_2},
+        {prompt: "Faces in the experiment shared similar qualities.", name: 'exp_similar', labels: scale_1}
       ],
       randomize_question_order: true
     };
