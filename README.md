@@ -14,7 +14,7 @@ You can download the necessary jsPsych libraries (6.1.0) for this experiment fro
 
 
 ### To run this experiment on a server (like Sapir):
-1. Login to the server on the UW Madison VPN using your credentials (ask Dr. Ward for your login). 
+1. Login to the server on the UW Madison VPN using your credentials (ask Dr. Ward for your login)
 2. Navigate to the mturk experiments directory ("cd /var/www/mturk")
 3. Make a new folder in this directory ("mkdir new_folder_name") // call it whatever you want ~
 4. Inside /var/www/mturk/new_folder_name, make a folder called "html" ("mkdir html")
