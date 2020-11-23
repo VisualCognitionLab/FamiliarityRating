@@ -4,7 +4,7 @@ This is a simple project that uses jsPsych to collect familiarity ratings for a 
 The main experiment is housed in the "index.html" file. This file defines and runs the experiment. 
 This experiment needs:
 * the necessary jsPsych libraries (jsPsych-6.1.0/)
-* the necessary jQuery file (jquery-3.5.1.js -- used for certain functionality)
+* the necessary jQuery file ("jquery-3.5.1.js" -- used for certain functionality)
 * the "write_data.php" file (saves the data)
 * the images used in the experiment (housed in folder called "ganfaces_final/" -- ask Ivette for access to this image folder) 
 
