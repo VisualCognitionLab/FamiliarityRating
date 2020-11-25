@@ -8,6 +8,7 @@
     <script src="jspsych-6.1.0/plugins/jspsych-vsl-grid-scene.js"></script>
     <script src="jspsych-6.1.0/plugins/jspsych-call-function.js"></script>
     <script src="jspsych-6.1.0/plugins/jspsych-image-slider-response.js"></script>
+      <script src="jspsych-6.1.0/plugins/jspsych-html-button-response.js"></script>
     <script src="jspsych-6.1.0/plugins/jspsych-survey-likert.js"></script>
     <script src="jspsych-6.1.0/plugins/jspsych-survey-text.js"></script>
     <link href="jspsych-6.1.0/css/jspsych.css" rel="stylesheet" type="text/css"></link>
@@ -49,109 +50,109 @@
     };
     timeline.push(instructions);
 
-    var test_stimuli = [{face: "ganfaces_final/face_64_resized.jpg"},
-                        {face: "ganfaces_final/face_330_resized.jpg"},
-                        {face: "ganfaces_final/face_184_resized.jpg"},
-                        {face: "ganfaces_final/face_140_resized.jpg"},
-                        {face: "ganfaces_final/face_283_resized.jpg"},
-                        {face: "ganfaces_final/face_217_resized.jpg"},
-                        {face: "ganfaces_final/face_20_resized.jpg"},
-                        {face: "ganfaces_final/face_26_resized.jpg"},
-                        {face: "ganfaces_final/face_24_resized.jpg"},
-                        {face: "ganfaces_final/face_237_resized.jpg"},
-                        {face: "ganfaces_final/face_385_resized.jpg"},
-                        {face: "ganfaces_final/face_3_resized.jpg"},
-                        {face: "ganfaces_final/face_188_resized.jpg"},
-                        {face: "ganfaces_final/face_268_resized.jpg"},
-                        {face: "ganfaces_final/face_260_resized.jpg"},
-                        {face: "ganfaces_final/face_328_resized.jpg"},
-                        {face: "ganfaces_final/face_98_resized.jpg"},
-                        {face: "ganfaces_final/face_75_resized.jpg"},
-                        {face: "ganfaces_final/face_232_resized.jpg"},
-                        {face: "ganfaces_final/face_137_resized.jpg"},
-                        {face: "ganfaces_final/face_50_resized.jpg"},
-                        {face: "ganfaces_final/face_320_resized.jpg"},
-                        {face: "ganfaces_final/face_9_resized.jpg"},
-                        {face: "ganfaces_final/face_94_resized.jpg"},
-                        {face: "ganfaces_final/face_324_resized.jpg"},
-                        {face: "ganfaces_final/face_371_resized.jpg"},
-                        {face: "ganfaces_final/face_187_resized.jpg"},
-                        {face: "ganfaces_final/face_302_resized.jpg"},
-                        {face: "ganfaces_final/face_139_resized.jpg"},
-                        {face: "ganfaces_final/face_201_resized.jpg"},
-                        {face: "ganfaces_final/face_295_resized.jpg"},
-                        {face: "ganfaces_final/face_355_resized.jpg"},
-                        {face: "ganfaces_final/face_122_resized.jpg"},
-                        {face: "ganfaces_final/face_57_resized.jpg"},
-                        {face: "ganfaces_final/face_101_resized.jpg"},
-                        {face: "ganfaces_final/face_289_resized.jpg"},
-                        {face: "ganfaces_final/face_370_resized.jpg"},
-                        {face: "ganfaces_final/face_244_resized.jpg"},
-                        {face: "ganfaces_final/face_92_resized.jpg"},
-                        {face: "ganfaces_final/face_66_resized.jpg"},
-                        {face: "ganfaces_final/face_382_resized.jpg"},
-                        {face: "ganfaces_final/face_163_resized.jpg"},
-                        {face: "ganfaces_final/face_61_resized.jpg"},
-                        {face: "ganfaces_final/face_133_resized.jpg"},
-                        {face: "ganfaces_final/face_193_resized.jpg"},
-                        {face: "ganfaces_final/face_51_resized.jpg"},
-                        {face: "ganfaces_final/face_388_resized.jpg"},
-                        {face: "ganfaces_final/face_233_resized.jpg"},
-                        {face: "ganfaces_final/face_279_resized.jpg"},
-                        {face: "ganfaces_final/face_376_resized.jpg"},
-                        {face: "ganfaces_final/face_293_resized.jpg"},
-                        {face: "ganfaces_final/face_202_resized.jpg"},
-                        {face: "ganfaces_final/face_341_resized.jpg"},
-                        {face: "ganfaces_final/face_173_resized.jpg"},
-                        {face: "ganfaces_final/face_383_resized.jpg"},
-                        {face: "ganfaces_final/face_111_resized.jpg"},
-                        {face: "ganfaces_final/face_310_resized.jpg"},
-                        {face: "ganfaces_final/face_325_resized.jpg"},
-                        {face: "ganfaces_final/face_212_resized.jpg"},
-                        {face: "ganfaces_final/face_366_resized.jpg"},
-                        {face: "ganfaces_final/face_339_resized.jpg"},
-                        {face: "ganfaces_final/face_344_resized.jpg"},
-                        {face: "ganfaces_final/face_34_resized.jpg"},
-                        {face: "ganfaces_final/face_147_resized.jpg"},
-                        {face: "ganfaces_final/face_135_resized.jpg"},
-                        {face: "ganfaces_final/face_148_resized.jpg"},
-                        {face: "ganfaces_final/face_349_resized.jpg"},
-                        {face: "ganfaces_final/face_114_resized.jpg"},
-                        {face: "ganfaces_final/face_393_resized.jpg"},
-                        {face: "ganfaces_final/face_282_resized.jpg"},
-                        {face: "ganfaces_final/face_112_resized.jpg"},
-                        {face: "ganfaces_final/face_190_resized.jpg"},
-                        {face: "ganfaces_final/face_359_resized.jpg"},
-                        {face: "ganfaces_final/face_288_resized.jpg"},
-                        {face: "ganfaces_final/face_151_resized.jpg"},
-                        {face: "ganfaces_final/face_379_resized.jpg"},
-                        {face: "ganfaces_final/face_45_resized.jpg"},
-                        {face: "ganfaces_final/face_198_resized.jpg"},
-                        {face: "ganfaces_final/face_390_resized.jpg"},
-                        {face: "ganfaces_final/face_191_resized.jpg"},
-                        {face: "ganfaces_final/face_127_resized.jpg"},
-                        {face: "ganfaces_final/face_181_resized.jpg"},
-                        {face: "ganfaces_final/face_249_resized.jpg"},
-                        {face: "ganfaces_final/face_361_resized.jpg"},
-                        {face: "ganfaces_final/face_54_resized.jpg"},
-                        {face: "ganfaces_final/face_352_resized.jpg"},
-                        {face: "ganfaces_final/face_346_resized.jpg"},
-                        {face: "ganfaces_final/face_205_resized.jpg"},
-                        {face: "ganfaces_final/face_360_resized.jpg"},
-                        {face: "ganfaces_final/face_115_resized.jpg"},
-                        {face: "ganfaces_final/face_323_resized.jpg"},
-                        {face: "ganfaces_final/face_389_resized.jpg"},
-                        {face: "ganfaces_final/face_368_resized.jpg"},
-                        {face: "ganfaces_final/face_200_resized.jpg"},
-                        {face: "ganfaces_final/face_109_resized.jpg"},
-                        {face: "ganfaces_final/face_165_resized.jpg"},
-                        {face: "ganfaces_final/face_28_resized.jpg"},
-                        {face: "ganfaces_final/face_0_resized.jpg"},
-                        {face: "ganfaces_final/face_41_resized.jpg"},
-                        {face: "ganfaces_final/face_157_resized.jpg"},
-                        {face: "ganfaces_final/mickey_tyler.jpg"},
-                        {face: "ganfaces_final/mickey_taylor.jpg"},
-                        {face: "ganfaces_final/mickey_clayton.jpg"}];
+    var test_stimuli = [{face: "resources/face_1_resized.jpg"},
+                        {face: "resources/face_103_resized.jpg"},
+                        {face: "resources/face_117_resized.jpg"},
+                        {face: "resources/face_122_resized.jpg"},
+                        {face: "resources/face_123_resized.jpg"},
+                        {face: "resources/face_124_resized.jpg"},
+                        {face: "resources/face_127_resized.jpg"},
+                        {face: "resources/face_130_resized.jpg"},
+                        {face: "resources/face_132_resized.jpg"},
+                        {face: "resources/face_135_resized.jpg"},
+                        {face: "resources/face_138_resized.jpg"},
+                        {face: "resources/face_139_resized.jpg"},
+                        {face: "resources/face_14_resized.jpg"},
+                        {face: "resources/face_162_resized.jpg"},
+                        {face: "resources/face_163_resized.jpg"},
+                        {face: "resources/face_164_resized.jpg"},
+                        {face: "resources/face_168_resized.jpg"},
+                        {face: "resources/face_172_resized.jpg"},
+                        {face: "resources/face_174_resized.jpg"},
+                        {face: "resources/face_176_resized.jpg"},
+                        {face: "resources/face_178_resized.jpg"},
+                        {face: "resources/face_18_resized.jpg"},
+                        {face: "resources/face_184_resized.jpg"},
+                        {face: "resources/face_187_resized.jpg"},
+                        {face: "resources/face_192_resized.jpg"},
+                        {face: "resources/face_197_resized.jpg"},
+                        {face: "resources/face_198_resized.jpg"},
+                        {face: "resources/face_200_resized.jpg"},
+                        {face: "resources/face_205_resized.jpg"},
+                        {face: "resources/face_214_resized.jpg"},
+                        {face: "resources/face_215_resized.jpg"},
+                        {face: "resources/face_219_resized.jpg"},
+                        {face: "resources/face_221_resized.jpg"},
+                        {face: "resources/face_227_resized.jpg"},
+                        {face: "resources/face_228_resized.jpg"},
+                        {face: "resources/face_229_resized.jpg"},
+                        {face: "resources/face_233_resized.jpg"},
+                        {face: "resources/face_247_resized.jpg"},
+                        {face: "resources/face_258_resized.jpg"},
+                        {face: "resources/face_260_resized.jpg"},
+                        {face: "resources/face_274_resized.jpg"},
+                        {face: "resources/face_282_resized.jpg"},
+                        {face: "resources/face_289_resized.jpg"},
+                        {face: "resources/face_291_resized.jpg"},
+                        {face: "resources/face_292_resized.jpg"},
+                        {face: "resources/face_295_resized.jpg"},
+                        {face: "resources/face_296_resized.jpg"},
+                        {face: "resources/face_306_resized.jpg"},
+                        {face: "resources/face_320_resized.jpg"},
+                        {face: "resources/face_323_resized.jpg"},
+                        {face: "resources/face_325_resized.jpg"},
+                        {face: "resources/face_339_resized.jpg"},
+                        {face: "resources/face_346_resized.jpg"},
+                        {face: "resources/face_352_resized.jpg"},
+                        {face: "resources/face_355_resized.jpg"},
+                        {face: "resources/face_359_resized.jpg"},
+                        {face: "resources/face_36_resized.jpg"},
+                        {face: "resources/face_360_resized.jpg"},
+                        {face: "resources/face_363_resized.jpg"},
+                        {face: "resources/face_369_resized.jpg"},
+                        {face: "resources/face_37_resized.jpg"},
+                        {face: "resources/face_373_resized.jpg"},
+                        {face: "resources/face_376_resized.jpg"},
+                        {face: "resources/face_383_resized.jpg"},
+                        {face: "resources/face_385_resized.jpg"},
+                        {face: "resources/face_405_resized.jpg"},
+                        {face: "resources/face_410_resized.jpg"},
+                        {face: "resources/face_412_resized.jpg"},
+                        {face: "resources/face_428_resized.jpg"},
+                        {face: "resources/face_45_resized.jpg"},
+                        {face: "resources/face_452_resized.jpg"},
+                        {face: "resources/face_46_resized.jpg"},
+                        {face: "resources/face_47_resized.jpg"},
+                        {face: "resources/face_475_resized.jpg"},
+                        {face: "resources/face_495_resized.jpg"},
+                        {face: "resources/face_497_resized.jpg"},
+                        {face: "resources/face_520_resized.jpg"},
+                        {face: "resources/face_522_resized.jpg"},
+                        {face: "resources/face_533_resized.jpg"},
+                        {face: "resources/face_54_resized.jpg"},
+                        {face: "resources/face_55_resized.jpg"},
+                        {face: "resources/face_560_resized.jpg"},
+                        {face: "resources/face_57_resized.jpg"},
+                        {face: "resources/face_58_resized.jpg"},
+                        {face: "resources/face_603_resized.jpg"},
+                        {face: "resources/face_613_resized.jpg"},
+                        {face: "resources/face_63_resized.jpg"},
+                        {face: "resources/face_64_resized.jpg"},
+                        {face: "resources/face_650_resized.jpg"},
+                        {face: "resources/face_657_resized.jpg"},
+                        {face: "resources/face_659_resized.jpg"},
+                        {face: "resources/face_73_resized.jpg"},
+                        {face: "resources/face_75_resized.jpg"},
+                        {face: "resources/face_757_resized.jpg"},
+                        {face: "resources/face_77_resized.jpg"},
+                        {face: "resources/face_78_resized.jpg"},
+                        {face: "resources/face_799_resized.jpg"},
+                        {face: "resources/face_84_resized.jpg"},
+                        {face: "resources/face_97_resized.jpg"},
+                        {face: "resources/face_98_resized.jpg"},
+                        {face: "resources/mickey_clayton.jpg"},
+                        {face: "resources/mickey_taylor.jpg"},
+                        {face: "resources/mickey_tyler.jpg"}];
 
 
 
@@ -170,7 +171,6 @@
       type: "image-slider-response",
       stimulus: jsPsych.timelineVariable('face'),
       labels: ['not at all familiar', 'extremely familiar'],
-      prompt: "<p>How familiar is this person?</p>",
       data: {test_part: 'test', image: jsPsych.timelineVariable('face')}
     }
 
@@ -224,25 +224,26 @@
 
     var survey_free = {
       type: 'survey-text',
-      questions: [{prompt: "Any other comments?", rows: 8, columns: 60},
+      questions: [{prompt: "How would you describe 'familiarity'?", rows: 8, columns: 60},
         {prompt: "Please enter your Worker ID:", rows: 1, columns: 60},
                   {prompt: "Please enter your age:", rows: 1, columns: 4}]
     };
     timeline.push(survey_free);
 
     var goodbye = {
-      type: "html-keyboard-response",
+      type: "html-button-response",
       stimulus: function(){
         output = "Here is your secret code: zzi_" + id;
-        output = output + "_izz <br> Goodbye!";
-      return output;}
+        output = output + "_izz <br><strong> Copy this code now, it will disappear after you click 'SUBMIT HIT'.</strong><br> Goodbye!<br><br>";
+      return output;},
+      choices: ["SUBMIT HIT"]
     };
     timeline.push(goodbye);
 
 
     function saveData(name, data){
       var xhr = new XMLHttpRequest();
-      xhr.open('POST', 'write_data.php'); 
+      xhr.open('POST', 'php_setup_jspsych.php'); 
       xhr.setRequestHeader('Content-Type', 'application/json');
       xhr.send(JSON.stringify({filename: name, filedata: data}));
     }
@@ -261,6 +262,6 @@
   </html>
 
 <!--
-Ivette Colón 
-11/22/2020
+By YIC
+11/25/2020
 -->
